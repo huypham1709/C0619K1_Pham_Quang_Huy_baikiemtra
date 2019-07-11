@@ -6,15 +6,17 @@
 </head>
 <body>
 <script>
-
-  let a=[ [3, 9, 7],
+  let arr=[ [3, 9, 7],
           [7, 4, 8],
           [0, 10, 1] ];
-  sumDiagonal();
-  function  sumDiagonal() {
-     let t = a[0][0] + a[1][1] + a[2][2];
-      document.write(t)
+  function  sumDiagonal(a) {
+    let sum =0;
+    for (let i=0;i<a.length;i++){
+     sum += a[i][i]
+    }
+    return sum;
   }
+  alert(sumDiagonal(arr))
 </script>
 </body>
 </html>

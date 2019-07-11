@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài4</title>
+</head>
+<body>
+<script>
+    let arr = [[4, 9, 10],
+        [7, 67, 8]];
+
+    function creatArr(arr3) {
+        let arr1 = [];
+        let arr2 = arr3;
+        for (let i = 0; i < arr2.length; i++) {
+            if (i % 2 != 0) {
+            arr2[i].reverse();
+            }
+            for (let j=0;j<arr2[i].length;j++){
+                arr1.push(arr2[i][j]);
+            }
+        }
+        return arr1
+    }
+let kq = creatArr(arr);
+document.write(kq);
+</script>
+</body>
+</html>
